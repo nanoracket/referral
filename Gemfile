@@ -7,6 +7,8 @@ gem 'rails', '3.2.11'
 
 gem 'pg'
 
+gem 'mysql2'
+
 gem 'activeadmin'
 
 
@@ -23,6 +25,7 @@ group :assets do
 end
 
 group :development do
+    gem 'sqlite3',     '1.3.9'
   gem 'pry'
 end
 

@@ -46,7 +46,7 @@ html.home{
 #home .hero{
 	width: 100%;
 	height: 446px;
-	background: url(/assets/home/hero.jpg) center center no-repeat;
+	background: url(/assets/home/SonicVR.jpg) center center no-repeat;
 	background-size: 1600px 446px;
 	overflow: hidden;
 	position: relative;
@@ -63,6 +63,7 @@ html.home{
 	position: relative;
 	z-index: 2;
 	letter-spacing: 2px;
+	text-align: left;
 }
 
 #home .hero .small{
@@ -293,7 +294,7 @@ html.home{
 	line-height: 0;
 	margin-right: 14px;
 	letter-spacing: 1px;
-	background: url(/assets/refer/logo.png) 0 0 no-repeat;
+/*	background: url(/assets/refer/logo.png) 0 0 no-repeat;*/
 	background-size: 106px 19px;
 	height: 19px;
 	width: 106px;
@@ -317,7 +318,7 @@ html.home{
 }
 
 #refer .mammoth .need{
-	color: #FFF;
+	color: #074E6F;
 	font-size: 38px;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -626,12 +627,12 @@ html.home{
 /*
 	RETINA
 */
-@media only screen and (min--moz-device-pixel-ratio: 2),
+/*@media only screen and (min--moz-device-pixel-ratio: 3),
 only screen and (-o-min-device-pixel-ratio: 2/1),
 only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-device-pixel-ratio: 2) {
+only screen and (min-device-pixel-ratio: 2) { */
 	#home .hero{
-		background: url(/assets/home/hero@2x.jpg) center center no-repeat;
+		background: url(/assets/home/SonicVR.jpg) center center no-repeat;
 		background-size: 1600px 446px;
 	}
 
@@ -641,12 +642,12 @@ only screen and (min-device-pixel-ratio: 2) {
 	}
 
 	#refer .header .logo{
-		background: url(/assets/refer/logo@2x.png) 0 0 no-repeat;
+		/*background: url(/assets/refer/logo@2x.png) 0 0 no-repeat;*/
 		background-size: 106px 19px;
 	}
 
 	#refer .mammoth{
-		background: url(/assets/refer/mammoth@2x.png) 0 0 no-repeat;
+		background: url(/assets/refer/SonicVR.jpg) 0 0 no-repeat;
 		background-size: 610px 394px;
 	}
 
@@ -684,7 +685,7 @@ only screen and (min-device-pixel-ratio: 2) {
 		background: url(/assets/refer/caret-selected@2x.png) center center no-repeat;
 		background-size: 16px 10px;
 	}
-}
+/*}
 
 
 
