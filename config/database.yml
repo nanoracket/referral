@@ -4,26 +4,23 @@
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 development: &default
-  adapter: mysql2
-  encoding: utf8
-  reconnect: false
-  database: c9
-  pool: 10
-  username: <%=ENV['C9_USER']%>
+  adapter: postgresql
+  database: referral
+  username: postgres
+  password: sonicvr
   host: <%=ENV['IP']%>
-  port: 3306
 
 development:
   <<: *default
-  database: c9
+  database: referral
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: c9
+  database: referral
 
 production:
   <<: *default
-  database: c9
+  database: referral
