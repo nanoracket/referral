@@ -12,28 +12,28 @@ class User < ActiveRecord::Base
 
     REFERRAL_STEPS = [
         {
-            'count' => 5,
-            "html" => "Shave<br>Cream",
+            'count' => 1,
+            "html" => "High<br>Five!",
             "class" => "two",
-            "image" =>  ActionController::Base.helpers.asset_path("/assets/refer/fb.png")
+            "image" =>  ActionController::Base.helpers.asset_path("/assets/refer/high-five.jpeg")
         },
         {
             'count' => 10,
-            "html" => "Truman Handle<br>w/ Blade",
+            "html" => "25% Off<br>Headphones",
             "class" => "three",
-            "image" => ActionController::Base.helpers.asset_path("/assets/refer/truman@2x.png")
+            "image" => ActionController::Base.helpers.asset_path("/assets/refer/25-off.jpg")
         },
         {
-            'count' => 25,
-            "html" => "Winston<br>Shave Set",
+            'count' => 100,
+            "html" => "SonicVR<br>Headphones",
             "class" => "four",
-            "image" => ActionController::Base.helpers.asset_path("/assets/refer/winston@2x.png")
+            "image" => ActionController::Base.helpers.asset_path("/assets/refer/headphones.jpg")
         },
         {
-            'count' => 50,
-            "html" => "One Year<br>Free Blades",
+            'count' => 200,
+            "html" => "Oculus Rift<br>DK2",
             "class" => "five",
-            "image" => ActionController::Base.helpers.asset_path("/assets/refer/blade-explain@2x.png")
+            "image" => ActionController::Base.helpers.asset_path("/assets/refer/dk2-product.jpg")
         }
     ]
 

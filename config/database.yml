@@ -5,22 +5,24 @@
 #   gem 'sqlite3'
 development: &default
   adapter: postgresql
-  database: referral
-  username: postgres
-  password: sonicvr
-  host: <%=ENV['IP']%>
+  database: d940gaip3sa7af
+  username: dvsyjxpvrvsprw
+  password: tETTiA5-g_mQ6fVRt7w27WUypN
+  port: 5432
+  host: ec2-107-21-93-97.compute-1.amazonaws.com
+
 
 development:
   <<: *default
-  database: referral
+  database: d940gaip3sa7af
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: referral
+  database: d940gaip3sa7af
 
 production:
   <<: *default
-  database: referral
+  database: d940gaip3sa7af
