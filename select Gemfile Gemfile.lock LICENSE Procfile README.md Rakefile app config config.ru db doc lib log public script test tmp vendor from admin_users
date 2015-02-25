@@ -1,0 +1,11 @@
+                    List of relations
+ Schema |         Name          | Type  |     Owner      
+--------+-----------------------+-------+----------------
+ public | active_admin_comments | table | dvsyjxpvrvsprw
+ public | admin_users           | table | dvsyjxpvrvsprw
+ public | delayed_jobs          | table | dvsyjxpvrvsprw
+ public | ip_addresses          | table | dvsyjxpvrvsprw
+ public | schema_migrations     | table | dvsyjxpvrvsprw
+ public | users                 | table | dvsyjxpvrvsprw
+(6 rows)
+
