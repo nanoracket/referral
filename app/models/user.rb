@@ -18,19 +18,19 @@ class User < ActiveRecord::Base
             "image" =>  ActionController::Base.helpers.asset_path("/assets/refer/high-five.jpeg")
         },
         {
-            'count' => 10,
-            "html" => "25% Off<br>Headphones",
+            'count' => 5,
+            "html" => "Sonic<br>T-shirt",
             "class" => "three",
-            "image" => ActionController::Base.helpers.asset_path("/assets/refer/25-off.jpg")
+            "image" => ActionController::Base.helpers.asset_path("/assets/refer/sonic.jpg")
         },
         {
-            'count' => 100,
+            'count' => 300,
             "html" => "SonicVR<br>Headphones",
             "class" => "four",
             "image" => ActionController::Base.helpers.asset_path("/assets/refer/headphones.jpg")
         },
         {
-            'count' => 200,
+            'count' => 500,
             "html" => "Oculus Rift<br>DK2",
             "class" => "five",
             "image" => ActionController::Base.helpers.asset_path("/assets/refer/dk2-product.jpg")
