@@ -63,14 +63,15 @@ Prelaunchr::Application.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
 
+  config.action_mailer.raise_delivery_errors = true
   config.action_mailer.default_url_options = { :host => 'heroku.com' }
    ActionMailer::Base.delivery_method = :smtp
 ActionMailer::Base.smtp_settings = {
   :address        => 'smtp.sendgrid.net',
   :port           => '587',
   :authentication => :plain,
-  :user_name      => ENV['sonicvr'],
-  :password       => ENV['sonicsocial1'],
+  :user_name      => ENV['app34191801@heroku.com'],
+  :password       => ENV['tplkciuq'],
   :domain         => 'heroku.com',
   :enable_starttls_auto => true
 }

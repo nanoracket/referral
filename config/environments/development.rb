@@ -53,13 +53,12 @@ Prelaunchr::Application.configure do
  
  ActionMailer::Base.delivery_method = :smtp
 ActionMailer::Base.smtp_settings = {
-  :user_name => 'nanoracket@gmail.com',
-  :password => 'finalfan13',
-  :domain => 'https://referral-nanoracket.c9.io/',
-  :address => 'smtp.gmail.com',
-  :port => 587,
+  :address        => 'smtp.sendgrid.net',
+  :port           => '587',
   :authentication => :plain,
+  :user_name      => 'sonicvr',
+  :password       => 'sonicsocial1',
+  :domain         => 'https://referral-nanoracket.c9.io/',
   :enable_starttls_auto => true
-  
 }
 end
