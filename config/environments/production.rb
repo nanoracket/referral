@@ -63,17 +63,16 @@ Prelaunchr::Application.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
 
-  config.action_mailer.default_url_options = { :host => 'https://referral-nanoracket.c9.io/' }
+  config.action_mailer.default_url_options = { :host => 'heroku.com' }
    ActionMailer::Base.delivery_method = :smtp
 ActionMailer::Base.smtp_settings = {
-  :user_name => 'nanoracket@gmail.com',
-  :password => 'finalfan13',
-  :domain => 'https://referral-nanoracket.c9.io/',
-  :address => 'smtp.gmail.com',
-  :port => 587,
+  :address        => 'smtp.sendgrid.net',
+  :port           => '587',
   :authentication => :plain,
+  :user_name      => ENV['sonicvr'],
+  :password       => ENV['sonicsocial1'],
+  :domain         => 'heroku.com',
   :enable_starttls_auto => true
-  
 }
   #config.assets.compile = true
 
