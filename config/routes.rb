@@ -11,6 +11,7 @@ Prelaunchr::Application.routes.draw do
   match 'refer-a-friend' => 'users#refer'
 
   match 'privacy-policy' => 'users#policy'
+  match 'preview' => 'users#preview'
 
   unless Rails.application.config.consider_all_requests_local
       match '*not_found', to: 'users#redirect', :format => false

@@ -45,6 +45,21 @@ Prelaunchr::Application.configure do
 
 
   # For mailer configs
-  config.action_mailer.perform_deliveries = false
+ # config.action_mailer.perform_deliveries = false
+ #config.action_mailer.raise_delivery_errors = true
+ 
   config.action_mailer.raise_delivery_errors = true
+#  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+ 
+ ActionMailer::Base.delivery_method = :smtp
+ActionMailer::Base.smtp_settings = {
+  :user_name => 'nanoracket@gmail.com',
+  :password => 'finalfan13',
+  :domain => 'https://referral-nanoracket.c9.io/',
+  :address => 'smtp.gmail.com',
+  :port => 587,
+  :authentication => :plain,
+  :enable_starttls_auto => true
+  
+}
 end

@@ -50,6 +50,7 @@ class UsersController < ApplicationController
             end
 
             @user.save
+            UserMailer.signup_email(@user).deliver
         end
 
         # Send them over refer action
@@ -59,6 +60,7 @@ class UsersController < ApplicationController
                 format.html { redirect_to '/refer-a-friend' }
             else
                 format.html { redirect_to root_path, :alert => "Something went wrong!" }
+                puts 'here'
             end
         end
     end
@@ -83,6 +85,11 @@ class UsersController < ApplicationController
     def policy
           
     end  
+    
+    def preview
+        @user = User.find(20)
+        @twitter_message = "#Shaving is evolving. Excited for @harrys to launch."
+    end
 
     def redirect
         redirect_to root_path, :status => 404

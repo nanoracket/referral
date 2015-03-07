@@ -63,8 +63,19 @@ Prelaunchr::Application.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
 
-  config.action_mailer.default_url_options = { :host => 'www.example.com' }
-  config.assets.compile = true
+  config.action_mailer.default_url_options = { :host => 'https://referral-nanoracket.c9.io/' }
+   ActionMailer::Base.delivery_method = :smtp
+ActionMailer::Base.smtp_settings = {
+  :user_name => 'nanoracket@gmail.com',
+  :password => 'finalfan13',
+  :domain => 'https://referral-nanoracket.c9.io/',
+  :address => 'smtp.gmail.com',
+  :port => 587,
+  :authentication => :plain,
+  :enable_starttls_auto => true
+  
+}
+  #config.assets.compile = true
 
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
