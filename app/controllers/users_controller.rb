@@ -50,7 +50,6 @@ class UsersController < ApplicationController
             end
 
             @user.save
-            UserMailer.signup_email(@user).deliver
         end
 
         # Send them over refer action
@@ -58,6 +57,7 @@ class UsersController < ApplicationController
             if !@user.nil?
                 cookies[:h_email] = { :value => @user.email }
                 format.html { redirect_to '/refer-a-friend' }
+                
             else
                 format.html { redirect_to root_path, :alert => "Something went wrong!" }
                 puts 'here'
@@ -87,7 +87,8 @@ class UsersController < ApplicationController
     end  
     
     def preview
-        @user = User.find(20)
+        @user = User.find(17)
+        UserMailer.signup_email(@user).deliver
         @twitter_message = "#Shaving is evolving. Excited for @harrys to launch."
     end
 

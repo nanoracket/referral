@@ -56,9 +56,9 @@ ActionMailer::Base.smtp_settings = {
   :address        => 'smtp.sendgrid.net',
   :port           => '587',
   :authentication => :plain,
-  :user_name      => 'sonicvr',
-  :password       => 'sonicsocial1',
-  :domain         => 'https://referral-nanoracket.c9.io/',
+  :user_name      => 'app34191801@heroku.com',
+  :password       => 'tplkciuq',
+ # :domain         => 'sendgrid.com',
   :enable_starttls_auto => true
 }
 end
