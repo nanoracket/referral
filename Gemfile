@@ -11,6 +11,10 @@ gem 'mysql2'
 
 gem 'activeadmin'
 
+gem 'sendgrid-ruby'
+
+gem 'mail'
+
 
 # Gems used only for assets and not required
 # in production environments by default.

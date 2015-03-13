@@ -39,26 +39,30 @@ Prelaunchr::Application.configure do
 
   # Do not compress assets
   config.assets.compress = false
+ # config.assets.precompile = true
 
   # Expands the lines which load the assets
   config.assets.debug = true
 
 
   # For mailer configs
- # config.action_mailer.perform_deliveries = false
- #config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.perform_deliveries = true
+  config.mailer_sender = 'noreply@example.com'
+  #config.action_mailer.raise_delivery_errors = true
  
   config.action_mailer.raise_delivery_errors = true
-#  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+ # config.action_mailer.default_url_options = { host: 'localhost:3000' }
  
- ActionMailer::Base.delivery_method = :smtp
-ActionMailer::Base.smtp_settings = {
-  :address        => 'smtp.sendgrid.net',
-  :port           => '587',
+  #config.action_mailer.default_url_options = { :host => 'https://referral-nanoracket.c9.io/' }
+  ActionMailer::Base.delivery_method = :smtp
+  ActionMailer::Base.smtp_settings = {
+  
+  :user_name => 'nanoracket@gmail.com',
+  :password => 'finalfan13',
+  :domain => 'https://referral-nanoracket.c9.io/',
+  :address => 'smtp.gmail.com',
+  :port => '587',
   :authentication => :plain,
-  :user_name      => 'app34191801@heroku.com',
-  :password       => 'tplkciuq',
- # :domain         => 'sendgrid.com',
   :enable_starttls_auto => true
 }
 end

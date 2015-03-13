@@ -64,15 +64,15 @@ Prelaunchr::Application.configure do
   config.active_support.deprecation = :notify
 
   config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.default_url_options = { :host => 'sonicvr.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'https://referral-nanoracket.c9.io/' }
    ActionMailer::Base.delivery_method = :smtp
 ActionMailer::Base.smtp_settings = {
   :address        => 'smtp.sendgrid.net',
   :port           => '587',
   :authentication => :plain,
-  :user_name      => ENV['SENDGRID_USERNAME'],
-  :password       => ENV['SENDGRID_PASSWORD'],
-  :domain         => 'heroku.com',
+  :user_name      => 'nanoracket@gmail.com',
+  :password       => 'finalfan13',
+  :domain         => 'https://referral-nanoracket.c9.io/',
   :enable_starttls_auto => true
 }
   #config.assets.compile = true
