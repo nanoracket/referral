@@ -90,7 +90,7 @@ class UsersController < ApplicationController
     #    client = SendGrid::Client.new(api_user: 'app34191801@heroku.com', api_key: 'tplkciuq')
         @user = User.find(17)
         @twitter_message = "#Shaving is evolving. Excited for @harrys to launch."
-        UserMailer.signup_email(@user).deliver
+        #UserMailer.signup_email(@user).deliver
 =begin
         #email = SendGrid::Mail.new do |m|
   m.to = @user.email
