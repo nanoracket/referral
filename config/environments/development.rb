@@ -51,7 +51,10 @@ Prelaunchr::Application.configure do
   #config.action_mailer.raise_delivery_errors = true
  
   config.action_mailer.raise_delivery_errors = true
-  #config.action_mailer.default_url_options = { :host => 'https://referral-nanoracket.c9.io/' }
+  config.action_mailer.default_url_options = { 
+    :host => "https://referral-nanoracket.c9.io/", 
+    :protocol => 'https' 
+}
   ActionMailer::Base.delivery_method = :smtp
   ActionMailer::Base.smtp_settings = {
   

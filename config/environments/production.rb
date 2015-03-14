@@ -64,7 +64,7 @@ Prelaunchr::Application.configure do
   config.active_support.deprecation = :notify
 
   #config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.default_url_options = { :host => 'sonicvr.herokuapp.com' }
+ # config.action_mailer.default_url_options = { :host => 'sonicvr.herokuapp.com' }
    ActionMailer::Base.delivery_method = :smtp
 ActionMailer::Base.smtp_settings = {
   :address        => 'smtp.gmail.com',
