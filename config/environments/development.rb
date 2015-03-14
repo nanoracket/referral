@@ -47,19 +47,19 @@ Prelaunchr::Application.configure do
 
   # For mailer configs
   config.action_mailer.perform_deliveries = true
-  config.mailer_sender = 'noreply@example.com'
+ # config.mailer_sender = 'noreply@example.com'
   #config.action_mailer.raise_delivery_errors = true
  
   config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.default_url_options = { 
-    :host => "https://referral-nanoracket.c9.io/", 
-    :protocol => 'https' 
-}
+ # config.action_mailer.default_url_options = { 
+  #  :host => "https://referral-nanoracket.c9.io/", 
+   # :protocol => 'https' 
+#}
   ActionMailer::Base.delivery_method = :smtp
   ActionMailer::Base.smtp_settings = {
   
-  :user_name => 'nanoracket@gmail.com',
-  :password => 'finalfan13',
+  :user_name => 'marketing@sonicvr.com',
+  :password => 'ev0companyUTC',
   :domain => 'https://referral-nanoracket.c9.io/',
   :address => 'smtp.gmail.com',
   :port => '587',

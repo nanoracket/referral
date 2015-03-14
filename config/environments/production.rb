@@ -70,8 +70,8 @@ ActionMailer::Base.smtp_settings = {
   :address        => 'smtp.gmail.com',
   :port           => '587',
   :authentication => :plain,
-  :user_name      => 'nanoracket@gmail.com',
-  :password       => 'finalfan13',
+  :user_name      => 'marketing@sonicvr.com',
+  :password       => 'ev0companyUTC',
   :domain         => 'heroku.com',
   :enable_starttls_auto => true
 }
