@@ -50,13 +50,14 @@ class UsersController < ApplicationController
             end
 
             @user.save
+            UserMailer.signup_email(@user).deliver
         end
 
         # Send them over refer action
         respond_to do |format|
             if !@user.nil?
                 cookies[:h_email] = { :value => @user.email }
-                UserMailer.signup_email(@user).deliver
+              #  UserMailer.signup_email(@user).deliver
                 format.html { redirect_to '/refer-a-friend' }
                 
             else
@@ -89,9 +90,9 @@ class UsersController < ApplicationController
     
     def preview
     #    client = SendGrid::Client.new(api_user: 'app34191801@heroku.com', api_key: 'tplkciuq')
-        @user = User.find(17)
+        @user = User.find(21)
         @twitter_message = "#Shaving is evolving. Excited for @harrys to launch."
-      #  UserMailer.signup_email(@user).deliver
+        UserMailer.signup_email(@user).deliver
 =begin
         #email = SendGrid::Mail.new do |m|
   m.to = @user.email
