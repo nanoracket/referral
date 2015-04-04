@@ -4,16 +4,9 @@ gem 'rails', '3.2.11'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-gem 'pg'
-
 gem 'mysql2'
 
 gem 'activeadmin'
-
-gem 'sendgrid-ruby'
-
-gem 'mail'
 
 
 # Gems used only for assets and not required
@@ -29,7 +22,6 @@ group :assets do
 end
 
 group :development do
-    gem 'sqlite3',     '1.3.9'
   gem 'pry'
 end
 
