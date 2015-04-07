@@ -13,27 +13,27 @@ class User < ActiveRecord::Base
     REFERRAL_STEPS = [
         {
             'count' => 1,
-            "html" => "High<br>Five!",
+            "html" => "Product A",
             "class" => "two",
-            "image" =>  ActionController::Base.helpers.asset_path("/assets/refer/high-five.jpeg")
+            "image" =>  ActionController::Base.helpers.asset_path("/assets/refer/question-mark.png")
         },
         {
             'count' => 5,
-            "html" => "Sonic<br>T-shirt",
+            "html" => "Product B",
             "class" => "three",
-            "image" => ActionController::Base.helpers.asset_path("/assets/refer/sonic.jpg")
+            "image" => ActionController::Base.helpers.asset_path("/assets/refer/question-mark.png")
         },
         {
-            'count' => 300,
-            "html" => "SonicVR<br>Headphones",
+            'count' => 10,
+            "html" => "Product C",
             "class" => "four",
-            "image" => ActionController::Base.helpers.asset_path("/assets/refer/headphones.jpg")
+            "image" => ActionController::Base.helpers.asset_path("/assets/refer/question-mark.png")
         },
         {
-            'count' => 500,
-            "html" => "Oculus Rift<br>DK2",
+            'count' => 20,
+            "html" => "Product D",
             "class" => "five",
-            "image" => ActionController::Base.helpers.asset_path("/assets/refer/dk2-product.jpg")
+            "image" => ActionController::Base.helpers.asset_path("/assets/refer/question-mark.png")
         }
     ]
 
@@ -54,4 +54,6 @@ class User < ActiveRecord::Base
     def send_welcome_email
         UserMailer.delay.signup_email(self)
     end
+
+
 end

@@ -90,9 +90,9 @@ class UsersController < ApplicationController
     
     def preview
     #    client = SendGrid::Client.new(api_user: 'app34191801@heroku.com', api_key: 'tplkciuq')
-        @user = User.find(1)
-        @twitter_message = "#VirtualRealit. Excited for @SonicVR to launch."
-        UserMailer.signup_email(@user).deliver
+        @user = User.find(3)
+        @twitter_message = "#VirtualReality. Excited for @SonicVR to launch."
+        UserMailer.delay.signup_email(@user)
 =begin
         #email = SendGrid::Mail.new do |m|
   m.to = @user.email

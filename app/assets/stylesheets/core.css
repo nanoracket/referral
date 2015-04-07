@@ -12,6 +12,8 @@
  *= require_self
  */
 
+@import url('http://fonts.googleapis.com/css?family=Dosis');
+
 
 form{
 	margin-bottom: 0;
@@ -64,6 +66,7 @@ html.home{
 	z-index: 2;
 	letter-spacing: 2px;
 	text-align: left;
+	text-decoration: underline;
 }
 
 #home .hero .small{
@@ -78,6 +81,7 @@ html.home{
 	text-align: center;
 	width: 375px;
 	letter-spacing: 1px;
+	text-decoration: underline;
 }
 
 #home .form-wrap{
