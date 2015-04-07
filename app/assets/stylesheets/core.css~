@@ -66,6 +66,7 @@ html.home{
 	z-index: 2;
 	letter-spacing: 2px;
 	text-align: left;
+	text-decoration: underline;
 }
 
 #home .hero .small{
@@ -80,6 +81,7 @@ html.home{
 	text-align: center;
 	width: 375px;
 	letter-spacing: 1px;
+	text-decoration: underline;
 }
 
 #home .form-wrap{
