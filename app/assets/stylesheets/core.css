@@ -48,7 +48,7 @@ html.home{
 #home .hero{
 	width: 100%;
 	height: 446px;
-	background: url(/assets/home/SonicVR.jpg) center center no-repeat;
+	background: url(/assets/home/hero@2xC.png) center center no-repeat;
 	background-size: 1600px 446px;
 	overflow: hidden;
 	position: relative;
@@ -59,7 +59,7 @@ html.home{
 #home .hero .large{
 	font-weight: bold;
 	font-size: 40px;
-	color: black;
+	color: white;
 	text-transform: uppercase;
 	margin: 85px 0 0 136px;
 	position: relative;
@@ -71,7 +71,22 @@ html.home{
 
 #home .hero .small{
 	font-weight: bold;
-	color: black;
+	color: white;
+	font-size: 40px;
+	margin: 1px 0 0 110px;
+	line-height: 30px;
+	position: relative;
+	z-index: 2;
+	text-transform: uppercase;
+	text-align: center;
+	width: 375px;
+	letter-spacing: 1px;
+	text-decoration: underline;
+}
+
+#home .hero .small2{
+	font-weight: bold;
+	color: white;
 	font-size: 40px;
 	margin: 10px 0 0 110px;
 	line-height: 30px;
@@ -91,11 +106,11 @@ html.home{
 }
 
 #home .form-wrap .key{
-	width: 46px;
-	height: 19px;
+	width: 55.2px;
+	height: 22.8px;
 	margin: 0 auto;
-/*	background: url(/assets/home/key.png) 0 0 no-repeat;*/
-	background-size: 46px 19px;
+	background: url(/assets/home/circles.png) 0 0 no-repeat;
+	background-size: 55.2px 22.8px;
 }
 
 #home .form-wrap .byline{
@@ -268,16 +283,27 @@ html.home{
 
 #refer .header{
 	height: 50px;
-	background: #074E6F;
+	background: black;
 	width: 100%;
 	overflow:hidden;
 	z-index: 1;
 	position: relative;
 }
 
+#refer .header .thanks{
+	font-size: 15px;
+	text-transform: uppercase;
+	color: black;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 2px;
+	margin: 15px 0;
+}
+
 #refer .header .content{
-	width: 315px;
+	width: 500px;
 	margin: 0 auto;
+	margin-left: 500px;
 }
 
 #refer .header p{
@@ -285,11 +311,15 @@ html.home{
 	color: #FFF;
 	font-weight: 500;
 	text-transform: uppercase;
-	line-height: 50px;
+	line-height: 10px;
 }
 
 #refer .header .byline{
-	font-size: 14px;
+	line-height: 0;
+	font-size: 15px;
+	font-weight: normal;
+	margin-top: -22px;
+	margin-left: 250px;
 }
 
 #refer .header .logo{
@@ -314,7 +344,7 @@ html.home{
 #refer .mammoth{
 	width: 612px;
 	height: 394px;
-	background: url(/assets/refer/SonicVR.jpg) 0 0 no-repeat;
+	background: url(/assets/refer/3Dimensions.png) 0 0 no-repeat;
 	background-size: 610px 394px;
 	overflow: hidden;
 	margin-top: 15px;
@@ -326,7 +356,7 @@ html.home{
 	font-size: 38px;
 	text-transform: uppercase;
 	font-weight: bold;
-	margin: 102px 0 0 72px;
+	margin: 102px 0 0 5px;
 	display: block;
 	line-height: 56px;
 	letter-spacing: 4px;
@@ -336,7 +366,7 @@ html.home{
 
 #refer .share-wrap{
 	float: right;
-	width: 400px;
+	width: 440px;
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: .13em;
@@ -344,24 +374,24 @@ html.home{
 }
 
 #refer .share-wrap .why{
-	font-size: 16px;
-	color: #555556;
-	font-weight: bold;
+	font-size: 14px;
+	color: black;
+	/*font-weight: bold;*/
 	margin-top: 42px;
 }
 
 #refer .share-wrap .title{
-	font-size: 30px;
+	font-size: 26px;
 	line-height: 40px;
 	text-transform: uppercase;
 	font-weight: bold;
-	color: #074E6F;
+	color: black;
 	margin-top: 18px;
 	letter-spacing: .13em;
 }
 
 #refer .share-wrap .subtitle{
-	color: #565656;
+	color: black;
 	font-size: 14px;
 	text-transform: none;
 	margin-top: 15px;
@@ -424,7 +454,7 @@ html.home{
 #refer .prizes .callout{
 	text-align: center;
 	font-size: 16px;
-	color: #074E6F;
+	color: black;
 	font-weight: bold;
 	margin: 20px 0 0 0;
 	letter-spacing: 2px;
@@ -472,9 +502,9 @@ html.home{
 #refer .prizes .products li.title{
 	height: 100%;
 	text-transform: uppercase;
-	color: #074E6F;
+	color: black;
 	font-weight: 500;
-	font-size: 14px;
+	font-size: 12px;
 	float: left;
 	margin-right: 68px;
 	width: 165px;
@@ -493,7 +523,7 @@ html.home{
 
 #refer .prizes .products li.product{
 	height: 100%;
-	color: #074E6F;
+	color: black;
 	width: 125px;
 	margin-right: 129px;
 	float: left;
@@ -588,7 +618,7 @@ html.home{
 #refer .prizes p.place{
 	text-align: center;
 	font-size: 16px;
-	color: #074E6F;
+	color: black;
 	width: 100%;
 	font-weight: 500;
 	margin-top: 30px;
@@ -637,13 +667,13 @@ only screen and (-o-min-device-pixel-ratio: 2/1),
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio: 2) { 
 	#home .hero{
-		background: url(/assets/home/SonicVR.jpg) center center no-repeat;
+		background: url(/assets/home/hero@2xC.png) center center no-repeat;
 		background-size: 1600px 446px;
 	}
 
 	#home .form-wrap .key{
-		/*background: url(/assets/home/key@2x.png) 0 0 no-repeat;*/
-		background-size: 46px 19px;
+		background: url(/assets/home/circles@2x.png) 0 0 no-repeat;
+		background-size: 55.2px 22.8px;
 	}
 
 	#refer .header .logo{
@@ -652,7 +682,7 @@ only screen and (min-device-pixel-ratio: 2) {
 	}
 
 	#refer .mammoth{
-		background: url(/assets/refer/SonicVR.jpg) 0 0 no-repeat;
+		background: url(/assets/refer/3Dimensions@2x.jpg) 0 0 no-repeat;
 		background-size: 610px 394px;
 	}
 

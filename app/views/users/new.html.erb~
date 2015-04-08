@@ -1,15 +1,15 @@
 <!--&#8217; -->
 <div class="hero">
     <p class="large brandon">HOLOGRAPHIC</p>
-    <p class="large brandon">AUDIO</p>
-<p class="large brandon">IS COMING</p>
+    <p class="small brandon">AUDIO</p>
+<p class="small2 brandon">IS COMING</p>
 </div>
 
 <div class="form-wrap clearfix <%= "ended" if Rails.application.config.ended %>">
     <% if Rails.application.config.ended %>
         <p class="thanks brandon">THANK YOU FOR PARTICIPATING<br>IN OUR PRE-LAUNCH.</p>
         <p class="compiling brandon">WE ARE COMPILING REWARDS RIGHT NOW AND WILL EMAIL<br/>COUPON CODES TO ALL RECIPIENTS IN THE NEXT DAY OR TWO</p>
-        <p class="go-to brandon">In the meantime, head to  <a href="http://www.harrys.com/">WWW.HARRYS.COM</a></p>
+        <p class="go-to brandon">In the meantime, head to  <a href="http://www.sonicvr.com/">WWW.SONICVR.COM</a></p>
         <p class="again brandon">Thank You Again!</p>
     <% else %>
         <div class="key"></div>
