@@ -48,7 +48,7 @@ html.home{
 #home .hero{
 	width: 100%;
 	height: 446px;
-	background: url(/assets/home/hero@2xC.png) center center no-repeat;
+	background: url(/assets/home/hero3.png) center center no-repeat;
 	background-size: 1600px 446px;
 	overflow: hidden;
 	position: relative;
@@ -58,10 +58,11 @@ html.home{
 
 #home .hero .large{
 	font-weight: bold;
-	font-size: 40px;
+	font-family: dosis;
+	font-size: 48px;
 	color: white;
 	text-transform: uppercase;
-	margin: 85px 0 0 136px;
+	margin: 85px 0 0 144px;
 	position: relative;
 	z-index: 2;
 	letter-spacing: 2px;
@@ -71,9 +72,10 @@ html.home{
 
 #home .hero .small{
 	font-weight: bold;
+	font-family: dosis;
 	color: white;
-	font-size: 40px;
-	margin: 1px 0 0 110px;
+	font-size: 48px;
+	margin: 4px 0 0 110px;
 	line-height: 30px;
 	position: relative;
 	z-index: 2;
@@ -87,8 +89,9 @@ html.home{
 #home .hero .small2{
 	font-weight: bold;
 	color: white;
-	font-size: 40px;
-	margin: 10px 0 0 110px;
+	font-size: 48px;
+	font-family: dosis;
+	margin: 18px 0 0 110px;
 	line-height: 30px;
 	position: relative;
 	z-index: 2;
@@ -109,6 +112,7 @@ html.home{
 	width: 55.2px;
 	height: 22.8px;
 	margin: 0 auto;
+	margin-left: 170px;
 	background: url(/assets/home/circles.png) 0 0 no-repeat;
 	background-size: 55.2px 22.8px;
 }
@@ -118,7 +122,7 @@ html.home{
 	text-transform: uppercase;
 	color: black;
 	text-align: center;
-	font-weight: bold;
+	font-weight: none;
 	letter-spacing: 2px;
 	margin: 15px 0;
 }
@@ -140,7 +144,7 @@ html.home{
 	height: 37px;
 	line-height: 37px;
 	color: #FFF;
-	font-size: 13px;
+	font-size: 17px;
 	text-transform: uppercase;
 	border: 0;
 	letter-spacing: 2px;
@@ -267,7 +271,7 @@ html.home{
 }
 
 .brandon{
-	font-family: "Brandon Grotesque", "brandon-grotesque", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+	font-family: dosis, "Helvetica", "Arial", sans-serif;
 }
 
 #refer{
@@ -317,9 +321,10 @@ html.home{
 #refer .header .byline{
 	line-height: 0;
 	font-size: 15px;
+	font-family: dosis;
 	font-weight: normal;
-	margin-top: -22px;
-	margin-left: 250px;
+	margin-top: -25px;
+	margin-left: 210px;
 }
 
 #refer .header .logo{
@@ -328,7 +333,7 @@ html.home{
 	line-height: 0;
 	margin-right: 14px;
 	letter-spacing: 1px;
-	background: url(/assets/refer/sonicvrlogo.png) 0 0 no-repeat;
+	background: url(/assets/refer/SonicVR-logo-white.png) 0 0 no-repeat;
 	background-size: 200px 50px;
 	height: 50px;
 	width: 200px;
@@ -353,7 +358,7 @@ html.home{
 
 #refer .mammoth .need{
 	color: black;
-	font-size: 38px;
+	font-size: 40px;
 	text-transform: uppercase;
 	font-weight: bold;
 	margin: 102px 0 0 5px;
@@ -374,14 +379,15 @@ html.home{
 }
 
 #refer .share-wrap .why{
-	font-size: 14px;
+	font-size: 13px;
 	color: black;
+	font-family: "Helvetica";
 	/*font-weight: bold;*/
 	margin-top: 42px;
 }
 
 #refer .share-wrap .title{
-	font-size: 26px;
+	font-size: 27px;
 	line-height: 40px;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -392,7 +398,8 @@ html.home{
 
 #refer .share-wrap .subtitle{
 	color: black;
-	font-size: 14px;
+	font-size: 13px;
+	font-family: "Helvetica";
 	text-transform: none;
 	margin-top: 15px;
 }
@@ -453,7 +460,7 @@ html.home{
 
 #refer .prizes .callout{
 	text-align: center;
-	font-size: 16px;
+	font-size: 14px;
 	color: black;
 	font-weight: bold;
 	margin: 20px 0 0 0;
@@ -478,7 +485,7 @@ html.home{
 }
 
 #refer .prizes .progress .mover .bar{
-	background: url(/assets/refer/progress-done.png) 0 0 repeat-x;
+	background: url(/assets/refer/progress-done-black.png) 0 0 repeat-x;
 	width: 165px;
 	height: 4px;
 	-webkit-background-size: 1px 4px;
@@ -639,7 +646,8 @@ html.home{
 
 #refer .prizes p.ship{
 	text-align: center;
-	font-size: 16px;
+	font-size: 12px;
+	font-family: "Helvetica";
 	color: #858181;
 	width: 100%;
 	font-weight: 500;
@@ -677,7 +685,7 @@ only screen and (min-device-pixel-ratio: 2) {
 	}
 
 	#refer .header .logo{
-		background: url(/assets/refer/sonicvrlogo.png) 0 0 no-repeat;
+		background: url(/assets/refer/SonicVR-logo-white.png) 0 0 no-repeat;
 		background-size: 200px 50px;
 	}
 
@@ -702,7 +710,7 @@ only screen and (min-device-pixel-ratio: 2) {
 	}
 
 	#refer .prizes .progress .mover .bar{
-		background: url(/assets/refer/progress-done@2x.png) 0 0 repeat-x;
+		background: url(/assets/refer/progress-done-black@2x.png) 0 0 repeat-x;
 		background-size: 1px 4px;
 	}
 

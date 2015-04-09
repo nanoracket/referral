@@ -29,6 +29,11 @@ class UsersController < ApplicationController
             end
 
             if cur_ip.count > 2
+begin
+cur_ip.count = cur_ip.count + 1
+cur_ip.validate!
+cur_ip.errors.full_messages
+end
                 return redirect_to root_path
             else
                 cur_ip.count = cur_ip.count + 1
@@ -91,7 +96,7 @@ class UsersController < ApplicationController
     def preview
     #    client = SendGrid::Client.new(api_user: 'app34191801@heroku.com', api_key: 'tplkciuq')
         @user = User.find(3)
-        @twitter_message = "#VirtualRealit. Excited for @SonicVR to launch."
+        @twitter_message = "#VirtualReality. Excited for @SonicVR to launch."
         UserMailer.delay.signup_email(@user)
 =begin
         #email = SendGrid::Mail.new do |m|

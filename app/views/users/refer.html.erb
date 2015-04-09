@@ -43,7 +43,7 @@
  %>
 <div class="prizes <% if found %>prize-<%= found["class"] %><% end %>">
     <div class="page-content">
-        <p class="callout brandon">Here's How It Works:</p>
+        <p class="callout brandon">How It Works:</p>
         <ul class="products clearfix">
             <li class="title brandon"><p class="friends">Friends Joined</p><p class="rewards">Exclusive Product</p></li>
             <% stops.each do |stop| %>
@@ -76,9 +76,9 @@
         %>
 
         <% if referrals_count == 0 %>
-            <p class="place brandon"><span>No</span> friends have joined...Yet!</p>
+            <p class="place brandon"><span>NO</span> FRIENDS HAVE JOINED YET</p>
         <% else %>
-            <p class="place brandon"><span><%= referrals_count %></span> <%= words %> joined</p>
+            <p class="place brandon"><span><%= referrals_count %></span> <%= words %> JOINED</p>
         <% end %>
         <p class="check brandon">(Keep checking)</p>
 

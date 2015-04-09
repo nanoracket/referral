@@ -1,0 +1,31 @@
+class IpAddress < ActiveRecord::Base
+  attr_accessible :address, :count
+
+# Required dependency for ActiveModel::Errors
+  extend ActiveModel::Naming
+
+  def initialize
+    @errors = ActiveModel::Errors.new(self)
+  end
+
+  attr_accessor :count
+  attr_reader   :errors
+
+  def validate!
+    errors.add(:count, "max of 3 users per IP Address") if count > 3
+  end
+
+  # The following methods are needed to be minimally implemented
+
+  def read_attribute_for_validation(attr)
+    send(attr)
+  end
+
+  def IpAddress.human_attribute_name(attr, options = {})
+    attr
+  end
+
+  def IpAddress.lookup_ancestors
+    [self]
+  end
+end
