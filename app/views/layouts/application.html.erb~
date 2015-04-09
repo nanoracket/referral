@@ -6,8 +6,7 @@
 <!--[if (gt IE 9)|!(IE)]><!--> <html class="<%= @bodyId %>"> <!--<![endif]-->
 <head>
         <title>SonicVR &ndash; Experience Reality</title>
-     <!--  <link rel="icon" href="<%= asset_path('favicon.ico') %>" type="image/x-icon">
-        <link rel="shortcut icon" href="<%= asset_path('favicon.ico') %>" type="image/x-icon"> -->
+        
 
         <meta property="og:title" content="SonicVR is coming!"/>
         <meta property="og:description" content="Sound is evolving. Didn’t want to leave you all behind. Check out SonicVR here."/>
